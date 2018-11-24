@@ -2308,7 +2308,8 @@ img[height] {
 
 .c-image-overlay img {
   width: 100%;
-  transition: ease .6s;
+  transition: ease 0.5s;
+  filter: grayscale(100%);
 }
 
 .c-image-overlay .c-image-overlay__deco-line {
@@ -2321,9 +2322,10 @@ img[height] {
 }
 
 .c-image-overlay:hover img {
-  transition: ease .8s;
-  -webkit-transform: scale(1.012);
-          transform: scale(1.012);
+  transition: ease 2s;
+  filter: grayscale(0%);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .c-image-overlay:hover .c-image-overlay__deco-line {
